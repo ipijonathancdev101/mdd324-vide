@@ -1,33 +1,33 @@
 package com.ipiecoles.java.mdd324.homepage.model;
-
-
-import javax.persistence.Entity;
-import javax.servlet.http.HttpServletRequest;
-import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-
 
 public class Bitcoin {
-         Integer bitcoinAmount;
-         List<String> currencyList;
+         private Integer bitcoinAmount;
+         private List<String> currencyList;
 
         // Constructeur
         public Bitcoin(){
-            bitcoinAmount = 1; // Initialise bitcoin à 1
-
         }
-        /*
 
-        Set<String> currencyList = (Set<String>) new ArrayList<String>();
-        currencyList.add("EUR");
-        currencyList.add("USD");
-        */
+        public Bitcoin(Integer bitcoinAmount, List<String> currencyList){
+            this.bitcoinAmount = bitcoinAmount;
+            this.currencyList = currencyList;
+        }
 
-
-
-
-
+    public Integer getBitcoinAmount() {
+        return bitcoinAmount;
     }
+
+    public void setBitcoinAmount(Integer bitcoinAmount) {
+        this.bitcoinAmount = bitcoinAmount;
+    }
+
+    public List<String> getCurrencyList() {
+        return currencyList;
+    }
+
+    public void setCurrencyList(List<String> currencyList) {
+        this.currencyList = currencyList;
+    }
+}
 
