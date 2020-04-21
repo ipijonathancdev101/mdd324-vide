@@ -2,31 +2,31 @@ package com.ipiecoles.java.mdd324.homepage.model;
 import java.util.List;
 
 public class Bitcoin {
-    private Integer bitcoinAmount;
-    private List<String> currencyList;
+    private Double bitcoinAmount;
+    private String currencyList;
 
     // Constructeur
     public Bitcoin(){
     }
 
-    public Bitcoin(Integer bitcoinAmount, List<String> currencyList){
+    public Bitcoin(Double bitcoinAmount, String currencyList){
         this.bitcoinAmount = bitcoinAmount;
         this.currencyList = currencyList;
     }
 
-    public Integer getBitcoinAmount() {
+    public Double getBitcoinAmount() {
         return bitcoinAmount;
     }
 
-    public void setBitcoinAmount(Integer bitcoinAmount) {
+    public void setBitcoinAmount(Double bitcoinAmount) {
         this.bitcoinAmount = bitcoinAmount;
     }
 
-    public List<String> getCurrencyList() {
+    public String getCurrencyList() {
         return currencyList;
     }
 
-    public void setCurrencyList(List<String> currencyList) {
+    public void setCurrencyList(String currencyList) {
         this.currencyList = currencyList;
     }
 }
