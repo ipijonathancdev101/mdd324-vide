@@ -19,7 +19,7 @@ public class Utils {
         StringJoiner lines = new StringJoiner(System.lineSeparator());
 
         try {
-            URL url = new URL(address);
+            URL url = new URL("https://min-api.cryptocompare.com");
             br = new BufferedReader(new InputStreamReader(url.openStream()));
             String line;
             while ((line = br.readLine()) != null) {
