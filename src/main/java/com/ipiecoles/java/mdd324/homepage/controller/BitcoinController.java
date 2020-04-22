@@ -27,7 +27,7 @@ public class BitcoinController {
         // Initialise un objet Genson
         Genson genson = new GensonBuilder().useRuntimeType(true).create();
 
-        //Mappé se que l'on a récupérer dans le string jsonBitcoin
+        //Mapper se que l'on a récupéré dans le string jsonBitcoin
         Map<String, Object> currencies = genson.deserialize(jsonBitcoin, Map.class);
 
         // Objet mapper
