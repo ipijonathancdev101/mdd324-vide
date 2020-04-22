@@ -9,6 +9,8 @@ public class BitcoinResponse {
     HashMap<String, Double> currencies;
     public BitcoinResponse(Double bitcoinAmount, HashMap<String, Double> currencies)
     {
+        this.currencies = new HashMap<String, Double>();
+
         this.bitcoinAmount = bitcoinAmount;
         for(Map.Entry<String, Double> entry : currencies.entrySet()) {
             String key = entry.getKey();

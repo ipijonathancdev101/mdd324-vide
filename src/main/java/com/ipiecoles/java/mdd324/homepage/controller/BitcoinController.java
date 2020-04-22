@@ -8,7 +8,6 @@ import com.owlike.genson.GensonBuilder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 @RequestMapping(value = "/price")
